@@ -25,11 +25,10 @@ export const RickAndMortyContainer: React.FC = () => {
         : `https://rickandmortyapi.com/api/character`
     )
       .then((response) => response.json())
-      .then((json) => {
-        return (
+      .then(
+        (json) =>
           json.results?.length && setCharacters(charactersMapper(json.results))
-        );
-      });
+      );
   }, [debouncedFilter]);
 
   return (

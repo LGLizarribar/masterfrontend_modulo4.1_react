@@ -5,6 +5,7 @@ import { ListPage } from "./scenes/list";
 import { DetailPage } from "./scenes/detail";
 import { MembersContextProvider } from "./context/members-context";
 import { RickAndMortyPage } from "./scenes/rick-and-morty";
+import { CharacterDetailPage } from "./scenes/character-detail";
 
 export const App = () => {
   return (
@@ -15,7 +16,7 @@ export const App = () => {
           <Route path="/list" element={<ListPage />} />
           <Route path="/detail/:id" element={<DetailPage />} />
           <Route path="/rick-and-morty" element={<RickAndMortyPage />} />
-          <Route path="/rick-and-morty/:id" element={<RickAndMortyPage />} />
+          <Route path="/rick-and-morty/:id" element={<CharacterDetailPage />} />
         </Routes>
       </Router>
     </MembersContextProvider>
