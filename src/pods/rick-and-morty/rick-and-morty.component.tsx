@@ -1,11 +1,4 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardHeader,
-  CardMedia,
-} from "@mui/material";
+import { Button, Card, CardActions, CardMedia } from "@mui/material";
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { RickAndMortyCharacter } from "./rick-and-morty.vm";
