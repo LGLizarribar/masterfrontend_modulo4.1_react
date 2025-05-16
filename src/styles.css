@@ -15,3 +15,7 @@
 .list-user-list-container > img {
   width: 80px;
 }
+
+.filter-input {
+  padding-bottom: 10px;
+}
