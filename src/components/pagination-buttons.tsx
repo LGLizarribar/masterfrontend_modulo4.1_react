@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
-import { MembersContext } from "./members-context";
+import { MembersContext } from "../context/members-context";
 
 export const PaginationButtons: React.FC = () => {
   const { handlePreviousPage, handleNextPage, currentPage, totalPages } =

@@ -1,5 +1,5 @@
 import React from "react";
-import { MemberEntity } from "./models";
+import { MemberEntity } from "../models/models";
 
 interface IMembersContext {
   members: MemberEntity[];

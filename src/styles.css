@@ -18,13 +18,9 @@
 
 .filter-input {
   width: fit-content;
-  padding-bottom: 10px;
+  padding: 10px 0px 10px 0px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  & > button {
-    margin: 8px;
-  }
 }
 
 .pagination-buttons {
@@ -32,4 +28,21 @@
   & > button {
     margin: 8px;
   }
+}
+
+.rick-and-morty-component-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: "5px";
+  & > h2 {
+    padding-right: "4px";
+  }
+}
+
+.rick-and-morty-component-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
