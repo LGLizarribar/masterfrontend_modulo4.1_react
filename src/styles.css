@@ -18,4 +18,14 @@
 
 .filter-input {
   padding-bottom: 10px;
+  & > button {
+    margin: 8px;
+  }
+}
+
+.pagination-buttons {
+  padding: 10px;
+  & > button {
+    margin: 8px;
+  }
 }

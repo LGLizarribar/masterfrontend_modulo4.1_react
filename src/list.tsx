@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MembersContext } from "./members-context";
+import { PaginationButtons } from "./pagination-buttons";
 
 export const ListPage: React.FC = () => {
   const { members, organization, setOrganization, fetchMembers } =
@@ -34,6 +35,7 @@ export const ListPage: React.FC = () => {
           </>
         ))}
       </div>
+      <PaginationButtons />
       <Link to="/detail">Navigate to detail page</Link>
     </>
   );
