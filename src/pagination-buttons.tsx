@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 import { MembersContext } from "./members-context";
 
@@ -6,12 +7,20 @@ export const PaginationButtons: React.FC = () => {
     React.useContext(MembersContext);
   return (
     <div className="pagination-buttons">
-      <button onClick={handlePreviousPage} disabled={currentPage === 1}>
+      <Button
+        onClick={handlePreviousPage}
+        disabled={currentPage === 1}
+        variant={"outlined"}
+      >
         Previous
-      </button>
-      <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+      </Button>
+      <Button
+        onClick={handleNextPage}
+        disabled={currentPage === totalPages}
+        variant={"contained"}
+      >
         Next
-      </button>
+      </Button>
     </div>
   );
 };

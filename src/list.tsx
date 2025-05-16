@@ -1,3 +1,4 @@
+import { Button, Input, TextField } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import { MembersContext } from "./members-context";
@@ -17,11 +18,12 @@ export const ListPage: React.FC = () => {
       <h2>Hello from List page</h2>
       <form onSubmit={handleFilter} className={"filter-input"}>
         <label>Organization: </label>
-        <input
+        <TextField
+          size="small"
           value={organization}
           onChange={(e) => setOrganization(e.target.value)}
         />
-        <button type="submit">Filter</button>
+        <Button type="submit">Filter</Button>
       </form>
       <div className="list-user-list-container">
         <span className="list-header">Avatar</span>
