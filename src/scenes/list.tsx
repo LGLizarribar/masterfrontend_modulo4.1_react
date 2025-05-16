@@ -39,7 +39,6 @@ export const ListPage: React.FC = () => {
         ))}
       </div>
       <PaginationButtons />
-      <Link to="/detail">Navigate to detail page</Link>
     </>
   );
 };
